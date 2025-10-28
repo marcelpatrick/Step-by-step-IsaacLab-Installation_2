@@ -69,4 +69,35 @@ sudo apt install cmake build-essential
 ./isaaclab.sh --install
 ```
 
+## Create a new IsaacLab project
+
+```
+# From the Isaac Lab directory 
+./isaaclab.sh --new
+```
+- Select task type (External/Internal), project path and name (myProject in this case) and resources to be used
+
+- Install Python into the created project
+```
+# After following the steps prompted (see the Walkthrough for an example)
+cd /root/IsaacSim/myProject
+python -m pip install -e source/myProject
+```
+
+- Confirm that the environment was correctly setup in Isaac Lab
+```
+python scripts/list_envs.py
+```
+- this should print something like
+```
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                   Available Environments in Isaac Lab                                                                    |
++--------+------------------------------+-------------------------------------------------------------+--------------------------------------------------------------------+
+| S. No. | Task Name                    | Entry Point                                                 | Config                                                             |
++--------+------------------------------+-------------------------------------------------------------+--------------------------------------------------------------------+
+|   1    | Template-Myproject-Direct-v0 | myProject.tasks.direct.myproject.myproject_env:MyprojectEnv | myProject.tasks.direct.myproject.myproject_env_cfg:MyprojectEnvCfg |
++--------+--------
+```
+
+
 
