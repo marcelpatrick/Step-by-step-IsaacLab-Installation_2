@@ -76,8 +76,15 @@ sudo apt install cmake build-essential
 ./isaaclab.sh --new
 ```
 - Select task type (External/Internal), project path and name (myProject in this case) and resources to be used
+```
+External vs Internal: Determines if the project is meant to be built as a part of the isaac lab repository, or if it is meant to be loaded as an external extension.
 
-- Install Python into the created project
+Direct vs Manager: A direct task primarily contains all the implementation details within the environment definition, while a manager based project is meant to use our modular definitions for the different “parts” of an environment.
+
+Framework: You can select more than one option here. This determines which RL frameworks you intend to natively use with your project (which specific algorithm implementations you want to use for training).
+```
+
+- to complete the installation process and register the environment, run:
 ```
 # After following the steps prompted (see the Walkthrough for an example)
 cd /root/IsaacSim/myProject
@@ -98,6 +105,19 @@ python scripts/list_envs.py
 |   1    | Template-Myproject-Direct-v0 | myProject.tasks.direct.myproject.myproject_env:MyprojectEnv | myProject.tasks.direct.myproject.myproject_env_cfg:MyprojectEnvCfg |
 +--------+--------
 ```
+
+## Following a basic tutorial
+
+### Classes and Configs
+Source: https://isaac-sim.github.io/IsaacLab/main/source/setup/walkthrough/api_env_design.html
+
+** When following the documentation, "isaac_lab_tutorial" should be replaced by your project name, in this case "myProject"
+
+- Navigate to ```/IsaacSim/myProject/source/myProject/myProject/tasks/direct/myproject#```
+- Open the config file (using Sublime in this example): ``` /IsaacSim/myProject/source/myProject/myProject/tasks/direct/myproject#```
+- If you don't have sublime enabled, run: ```sudo snap install sublime-text --classic```
+- 
+
 
 
 
