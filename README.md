@@ -106,7 +106,7 @@ python scripts/list_envs.py
 +--------+--------
 ```
 
-## Test that the project was correctly created
+## Test that the project was correctly created:
 
 ### Classes and Configs
 Source: https://isaac-sim.github.io/IsaacLab/main/source/setup/walkthrough/api_env_design.html
