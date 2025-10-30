@@ -106,17 +106,21 @@ python scripts/list_envs.py
 +--------+--------
 ```
 
-## Following a basic tutorial
+## Test that the project was correctly created
 
 ### Classes and Configs
 Source: https://isaac-sim.github.io/IsaacLab/main/source/setup/walkthrough/api_env_design.html
 
 ** When following the documentation, "isaac_lab_tutorial" should be replaced by your project name, in this case "myProject"
 
-- Navigate to ```/IsaacSim/myProject/source/myProject/myProject/tasks/direct/myproject#```
-- Open the config file (using Sublime in this example): ``` /IsaacSim/myProject/source/myProject/myProject/tasks/direct/myproject#```
-- If you don't have sublime enabled, run: ```sudo snap install sublime-text --classic```
-- 
+- Open an Ubuntu terminal
+- Activate the conda environment created with Python 3.11 ```conda activate env_isaaclab```
+- Navigate to ```cd ~/IsaacSim/myProject/source/myProject/myProject/tasks/direct/myproject```
+- Check the environment configurations:
+  - Open the config file (using Sublime in this example): ```subl myproject_env_cfg.py```
+  - If you don't have sublime enabled, run: ```sudo snap install sublime-text --classic```
+- Check the project environment file
+  - Run ```subl myproject_env.py```
 
 
 
